@@ -1,0 +1,20 @@
+@import url(../vendor/normalize.css);
+@import url(../blocks/pages.css);
+@import url(../blocks/header.css);
+@import url(../blocks/summary.css);
+@import url(../blocks/gallery.css);
+@import url(../blocks/cities.css);
+@import url(../blocks/footer.css);
+@import url(../blocks/copyright.css);
+@font-face {
+    font-family: "Inter";
+    src: url(../fonts/Inter-Black.woff2);
+}
+@font-face {
+    font-family: "Inter";
+    src: url(../fonts/Inter-Regular.woff2);
+}
+@font-face {
+    font-family: "Inter";
+    src: url(../fonts/Inter-SemiBold.woff2);
+}
