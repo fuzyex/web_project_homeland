@@ -53,7 +53,6 @@
     height: 48px;
     font-family: "Inter",Arial, sans-serif;
     font-size: 18px;
-    line-height: auto;
     color: #fff;
     width: 100%;
     background-color: #0278fe;
@@ -83,7 +82,6 @@
     color: #aaa;
     font-family: "Inter",Arial, sans-serif;
     font-size: 12px;
-    line-height: auto;
 
 }
 .cities_paragraph{
