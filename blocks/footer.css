@@ -20,7 +20,7 @@
 .footer__title{
     max-width: 656px;
     height: 76px;
-    font-family: "Inter",Arial, sans-serif;
+    font-weight: 900;
     font-size: 72px;
     line-height: 76px;
     color: #fff;
@@ -31,7 +31,7 @@
 .footer__description{
     max-width: 280px;
     height: 66px;
-    font-family: "Inter",Arial, sans-serif;
+    font-weight: 400;
     font-size: 18px;
     line-height: 22px;
     color: #fff;
@@ -41,7 +41,7 @@
 .footer__button{
     max-width: 191px;
     height: 48px;
-    font-family: "Inter",Arial, sans-serif;
+    font-weight: 600; 
     font-size: 18px;
     color: #fff;
     width: 100%;
@@ -49,4 +49,36 @@
     border-radius: 4px;
     border: none;
     margin: 0 auto;
+}
+@media screen and (max-width: 768px){
+    .footer {
+        max-width: 768px;
+        height: 746px;
+    }
+    .footer__title {
+        padding-top: 246px;
+        padding-bottom: 32px;
+    }
+}
+
+@media screen and (max-width: 320px){
+    .footer {
+        max-width: 320px;
+        height: 254px;
+    }
+    .footer__title {
+        max-width: 288px;
+        height: 35px;
+        font-size: 32px;
+        line-height: 35px;
+        padding-top: 46px;
+        padding-bottom: 16px;
+    }
+    .footer__description {
+        max-width: 280px;
+        height: 48px;
+        font-size: 14px;
+        line-height: 16px;
+        padding-bottom: 16px;
+    }
 }

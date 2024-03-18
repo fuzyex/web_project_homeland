@@ -2,10 +2,23 @@
     padding-top: 92px;
     max-width: 166px;
     height: 16px;
-    font-family: "Inter",Arial, sans-serif;
+    font-weight: 400;
     font-size: 14px;
     line-height: 16px;
     color: #fff;
     margin: 0 auto;
     padding-bottom: 24px;
+}
+@media screen and (max-width: 768px){
+    .copyright {
+        padding-top: 88px;
+    }
+}
+
+@media screen and (max-width: 320px){
+    .copyright {
+        padding-top: 64px;
+        height: 14px;
+        line-height: 14px;
+    }
 }
