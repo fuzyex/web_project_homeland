@@ -9,6 +9,10 @@
     font-family: "Inter", Arial, sans-serif;
 
 }
+.footer:hover{
+    background-image: #2A2C2F;
+    opacity: .5;
+}
 .footer__content{
     display: flex;
     flex-direction: column;
@@ -41,6 +45,7 @@
 }
 .footer__button{
     max-width: 191px;
+    height: 48px;
     font-weight: 600;
     font-size: 18px;
     color: #fff;
@@ -49,6 +54,10 @@
     border-radius: 4px;
     border: none;
     margin: 0;
+}
+.footer__button:hover{
+        background: #0063d2;
+        opacity: .8;
 }
 @media only screen and (max-width: 768px){
     .footer {

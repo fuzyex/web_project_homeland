@@ -19,6 +19,12 @@
 
 .cities__content:last-of-type {
     padding-bottom: 92px;
+        grid-template-areas:
+            "title author"
+            "image paragraph"
+            ". paragraph"
+            ". paragraph";
+
 }
 
 .cities__title {
@@ -28,7 +34,7 @@
     color: #ffffff;
     max-width: 460px;
     padding-bottom: 48px;
-    margin: 0 auto;
+    margin: 0;
     font-weight: 900;
     grid-area: title;
 }
@@ -54,9 +60,11 @@
     font-weight: 600;
     position: relative;
     margin-top: 48px;
-
 }
-
+.cities__button:hover{
+    background: #0063d2;
+    opacity: .8;
+}
 .cities__content-artist {
     grid-area: author;
     width: 100%;
