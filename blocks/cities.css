@@ -200,7 +200,7 @@
     }
 }
 
-@media screen and (max-width: 320px){
+@media screen and (min-width: 320px) and (max-width: 544px) {
     .cities__content {
         padding-top: 50px;
         padding-left: 0px;
