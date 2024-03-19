@@ -9,6 +9,7 @@
     grid-template-areas: 
     "title author"
     "image paragraph"
+    ". paragraph"
     ". paragraph";  
 }
 
@@ -144,162 +145,160 @@
 @media screen and (max-width: 768px){
     .cities__content {
         padding-top: 72px;
-        padding-left: 0;
-    }
-    .cities__contents {
-        gap: 28px;
-    }
-    .cities__itens {
         padding-left: 24px;
-        margin: 0;
+        padding-right: 11px;
+        grid-column-gap: 28px;
     }
+    
     .cities__title {
         font-size: 42px;
         line-height: 46px;
         max-width: 340px;
-        padding-right: 28px;
         padding-bottom: 46px;
         margin: 0;
     }
+    
     .cities__image {
         max-width: 340px;
         height: 340px;
     }
-    .cities__text {
-        max-width: 352px;
-        padding-right: 11px;
-    }
-    .cities__text_mod-value {
+    
+    .cities__author_value {
         padding-top: 0px;
     }
-    .cities__text_mod-space {
+    
+    .cities__author_space {
         padding-top: 25px;
     }
-    .cities__text_mod-distance {
+    
+    .cities__author_distance {
         padding-top: 0px;
     }
-    .cities__text_mod-gap {
+    
+    .cities__author_gap {
         padding-top: 47px;
     }
-    .cities__author {
-        max-width: 67px;
-        height: 15px;
-    }  
+    
     .cities__author-name {
         max-width: 365px;
         height: 22px;
         padding-bottom: 46px;
-    } 
+    }
+    
+    .cities__authors-name {
+        max-width: 352px;
+        height: 22px;
+    }
+    
+    .cities__contents-paragraph {
+        max-width: 352px;
+    }
+    
     .cities__paragraph {
         font-size: 16px;
         padding-bottom: 14px;
-        margin: 0;
     }
 }
 
 @media screen and (max-width: 320px){
     .cities__content {
-        padding-top: 62px;
-    }
-    
-    .cities__contents {
-        display: flex;
-        flex-direction: column;
-        gap: 0px;
-    }
-    
-    .cities__itens {
+        padding-top: 50px;
         padding-left: 0px;
-        flex: 1; 
+        padding-right: 0px;
+        grid-column-gap: 0px;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas: 
+        "title"
+        "author"
+        "image"
+        "paragraph"
+        "paragraph"; 
+    }
+     
+    .cities__content:first-of-type {
+        padding-top: 0px;
+    }
+    
+    .cities__content:last-of-type {
+        padding-bottom: 64px;
+            grid-template-areas:
+                "title"
+                "author"
+                "image"
+                "paragraph"
+                "paragraph"
+                "paragraph";   
     }
     
     .cities__title {
         font-size: 32px;
         line-height: 35px;
         max-width: 288px;
-        height: 35px;
-        padding-right: 16px;
         padding-bottom: 30px;
+        padding-left: 16px;
+        padding-right: 16px;
     }
     
     .cities__image {
         max-width: 320px;
-        margin: 0 auto;
+        height: 320px;
         padding-bottom: 30px;
     }
-
+    
     .cities__button {
-        margin: 0;
-        align-self: center;
         max-width: 288px;
-        height: 48px;
-        font-size: 14px;
+        margin: 30px auto 0px;
     }
     
-    .cities__text {
-        max-width: 288px;
-        margin-left: 0;
-        padding-right: 16px;
+    .cities__content-artist {
         padding-left: 16px;
-        flex: 1; 
-    } 
-    
-    .cities__text_mod-value {
-        padding-top: 30px;
-    }
-    
-    .cities__text_mod-space {
-        padding-top: 30px;
-    }
-    
-    .cities__text_mod-distance {
-        padding-top: 30px;
-    }
-    
-    .cities__text_mod-gap {
-        padding-top: 30px;
+        padding-right: 16px;
     }
     
     .cities__author {
         font-size: 12px;
         max-width: 288px;
         height: 15px;
+        letter-spacing: 12%;
+    }
+    
+    .cities__author_value {
+        padding-top: 0px;
+    }
+    
+    .cities__author_space {
+        padding-top: 0px;
+    }
+    
+    .cities__author_distance {
+        padding-top: 0px;
+    }
+    
+    .cities__author_gap {
+        padding-top: 0px;
     }
     
     .cities__author-name {
         max-width: 288px;
         height: 44px;
-        font-size: 18px;
-        line-height: 22px;
         padding-bottom: 30px;
-        margin: 0;
-        font-weight: 400;
     }
     
     .cities__authors-name {
-        max-width: 456px;
-        color: #FFFFFF;
-        font-family: "Inter", Arial, sans-serif;
-        font-size: 18px;
-        line-height: 22px;
-        padding-bottom: 0px;
-        margin: 0;
-        font-weight: 400;
+        max-width: 288px;
+        height: 22px;
+    }
+    
+    .cities__contents-paragraph {
+        max-width: 288px;
+        margin: 0 auto;
     }
     
     .cities__paragraph {
-        color: #FFFFFF;
-        font-family: "Inter", Arial, sans-serif;
-        font-size: 18px;
-        line-height: 163%;
+        font-size: 16px;
         padding-bottom: 25px;
-        margin: 0;
-        font-weight: 400;
     }
     
-    .cities__paragraph:last-of-type {
-        padding-bottom: 0px;
-    }
 }
 
 

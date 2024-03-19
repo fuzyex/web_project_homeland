@@ -5,5 +5,6 @@
     font-size: 16px;
     line-height: 20px;
     background-color: #2a2c2f;
+    box-sizing: border-box;
   }
   
