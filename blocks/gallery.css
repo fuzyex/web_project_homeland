@@ -22,7 +22,7 @@
     }
 
   }
-  @media screen and (max-width: 320px){
+  @media screen and (min-width: 320px) and (max-width: 544px){
     .gallery{
         grid-template-columns: repeat(1, auto);
         grid-template-rows: repeat(8, auto);
